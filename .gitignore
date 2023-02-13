@@ -2,6 +2,9 @@
 nlw-habits-backend/node_modules
 nlw-habits-backend/dist
 nlw-habits-backend/.env
+nlw-habits-backend/prisma/migrations
+nlw-habits-backend/prisma/dev.db
+nlw-habits-backend/prisma/dev.db-journal
 
 #Frontend
 nlw-habits-frontend/node_modules

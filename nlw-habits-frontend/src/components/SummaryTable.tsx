@@ -58,7 +58,7 @@ export function SummaryTable() {
                     const dayInSummary = summary.find(day => dayjs(date).isSame(day.date, 'day'))
 
                     return (
-                        <HabitDay key={index} amount={dayInSummary?.amount} completed={dayInSummary?.completed} date={date} />
+                        <HabitDay key={index} amount={dayInSummary?.amount} defaultCompleted={dayInSummary?.completed} date={date} />
                     )
                 }) 
             }

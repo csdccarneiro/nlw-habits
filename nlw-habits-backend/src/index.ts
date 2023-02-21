@@ -14,6 +14,6 @@ server.register(dayRoutes, { prefix: "/day" })
 
 server.register(summaryRoutes, { prefix: "/summary" })
 
-server.listen({ port: 3333 }, (err, address) => {
+server.listen({ port: 3333, host: '0.0.0.0' }, (err, address) => {
     if (err) throw err
 })

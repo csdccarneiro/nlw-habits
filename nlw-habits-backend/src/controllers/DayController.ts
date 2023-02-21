@@ -3,6 +3,7 @@ import { z } from 'zod'
 import dayjs from "dayjs"
 import { prisma } from '../lib/prisma'
 
+
 const DayController = {
 
     index: async function (request: FastifyRequest, reply: FastifyReply) {
@@ -40,7 +41,7 @@ const DayController = {
             }
         })
 
-        const completedHabits = day?.dayHabits.map(dayHabit => dayHabit.habit_id)
+        const completedHabits = day?.dayHabits.map(dayHabit => dayHabit.habit_id) ?? []
 
         return {
             possibleHabits,
